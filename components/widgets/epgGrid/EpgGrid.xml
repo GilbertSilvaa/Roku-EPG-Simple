@@ -1,0 +1,57 @@
+<component name="EpgGrid" extends="Group">
+  <script type="text/brightscript" uri="EpgGrid.brs" />
+  <script type="text/brightscript" uri="../../helpers/FormatDateHelper.brs" />
+
+  <interface>
+    <field id="content" type="node" />
+  </interface>
+
+  <children>
+    <Group translation="[20, 20]">
+      <Poster id="poster" />
+
+      <LayoutGroup 
+        layoutDirection="vert" 
+        itemSpacings="[20]"
+        translation="[580, 10]"
+      >
+        <Label id="title" width="520" />
+
+        <LayoutGroup 
+          layoutDirection="horiz" 
+          itemSpacings="[25]"
+        >
+          <ParentalRatingIcon id="ratingIcon" visible="false"/>
+          <Label 
+            id="category" 
+            height="25" 
+            vertAlign="center" 
+            color="0xababab" 
+          />
+          <Label 
+            id="duration" 
+            height="25" 
+            vertAlign="center" 
+            color="0xababab" 
+          />
+        </LayoutGroup>
+
+        <Rectangle/>
+        <Label 
+          id="description" 
+          height="160" 
+          width="520" 
+          wrap="true" 
+          color="0xcdcdcd"
+        />
+      </LayoutGroup>
+    </Group>
+
+    <TimeGrid 
+      id="timeGrid" 
+      translation="[0, 420]" 
+      showPastTimeScreen="true"
+      pastTimeScreenBlendColor="0x212121"
+    />
+  </children>
+</component>

@@ -1,0 +1,19 @@
+<component name="ParentalRatingIcon" extends="Group">
+  <script type="text/brightscript" uri="ParentalRatingIcon.brs" />
+  
+  <interface>
+    <field id="parentalRating" type="string" value="L" />
+    <field id="size" type="integer" value="25" />
+  </interface>
+
+  <children>
+    <Rectangle id="box" translation="[0, 0]">    
+      <Label
+        id="rating"
+        horizAlign="center"
+        vertAlign="center"
+        translation="[0, 0]" 
+      />
+    </Rectangle>
+  </children>
+</component>

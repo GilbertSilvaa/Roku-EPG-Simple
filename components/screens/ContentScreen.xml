@@ -1,0 +1,13 @@
+<component name="ContentScreen" extends="Group">
+  <script type="text/brightscript" uri="ContentScreen.brs" />
+  
+  <children>
+    <Rectangle 
+      width="1280" 
+      height="720" 
+      color="0x000000f5"
+    >
+      <EpgGrid id="epg"/>
+    </Rectangle>
+  </children>
+</component>

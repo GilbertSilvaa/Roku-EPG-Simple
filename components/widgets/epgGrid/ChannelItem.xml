@@ -1,0 +1,19 @@
+<component name="ChannelItem" extends="Group">
+  <script type="text/brightscript" uri="ChannelItem.brs" />
+
+  <interface>
+    <field id="width" type="float" />
+    <field id="height" type="float" />
+    <field id="content" type="node" />
+  </interface>
+
+  <children>
+    <Poster id="icon" translation="[5, 5]" />
+    <Label 
+      id="title" 
+      translation="[75, 0]" 
+      horizAlign="center"
+      vertAlign="center"
+    />
+  </children>
+</component>
