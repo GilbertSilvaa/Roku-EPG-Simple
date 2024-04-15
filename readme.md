@@ -2,10 +2,12 @@
 
 This project aims to develop a robust and intuitive Electronic Program Guide (EPG) for the Roku platform. By utilizing the TimeGrid functionality, we provide a sophisticated solution for efficient viewing and navigation through TV schedules.
 
+![Screenshot](https://i.ibb.co/jTYtGGj/screenshot.jpg)
+
 ## Contribution and Feedback
 
 This project is open source and welcomes contributions from the community. We encourage feedback, suggestions, and collaborations to enhance and expand this tool.
 
-Feel free to open issues, submit pull requests, and actively participate in the development of this exciting project.
+Feel free to open [issues](link-to-issues), submit [pull requests](link-to-pull-requests), and actively participate in the development of this exciting project.
 
 Join us in creating a more enjoyable and engaging TV viewing experience for Roku platform users.
