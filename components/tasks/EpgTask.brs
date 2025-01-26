@@ -3,7 +3,7 @@ sub init()
 end sub
 
 sub loadContent()
-  responseJson = httpGet("https://661d23cf337c2309fe33bc2e--dulcet-hotteok-cfb318.netlify.app/epg.json")
+  responseJson = httpGet("https://dulcet-hotteok-cfb318.netlify.app/epg.json")
   response = parseJson(responseJson)
   content = createObject("RoSGNode", "ContentNode")
 
