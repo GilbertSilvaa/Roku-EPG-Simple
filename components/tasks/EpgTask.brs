@@ -3,16 +3,22 @@ sub init()
 end sub
 
 sub loadContent()
-  responseJson = httpGet("https://dulcet-hotteok-cfb318.netlify.app/epg.json")
+  responseJson = httpGet("https://dulcet-hotteok-cfb318.netlify.app/epg2.json")
   response = parseJson(responseJson)
   content = createObject("RoSGNode", "ContentNode")
 
   for each channel in response.channels
     channelContent = channelContentNode(channel)
-
     dt = createObject("RoDateTime")
-    dtSecs = dt.asSeconds()
-    playStart = dtSecs - (dtSecs mod 1800)
+
+    if not type(channel.schedule) = "String" then
+      if not channel.schedule.programs = invalid then
+        firstProgram = channel.schedule.programs[0]
+        dt.fromISO8601String(firstProgram.dateInit)
+      end if
+    end if
+
+    playStart = dt.asSeconds()
     programs = []
 
     if not type(channel.schedule) = "String" then

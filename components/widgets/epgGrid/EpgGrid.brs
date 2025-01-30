@@ -39,8 +39,7 @@ sub handleProgramChange()
   m.desc.text = programContent.description
   m.ratingIcon.parentalRating = programContent.parentalRating
 
-  timeZone = 10800 'time zone 3 hours -> 10800 seconds
-  timeStart = programContent.playStart - timeZone
+  timeStart = programContent.playStart
   timeDuration = programContent.playDuration
   dtProgramStart = createObject("RoDateTime")
   dtProgramEnd = createObject("RoDateTime")
